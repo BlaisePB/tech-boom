@@ -1,0 +1,119 @@
+/***************************************************
+
+CONTENTS
+
+0. Includes
+1. Core
+2. Top Nav
+3. Sticky Footer
+4. Tech in STL
+5. Tech Moving
+6. Tech Origins
+****************************************************/
+
+@import "ember-cli-bootstrap-4/bootstrap";
+
+/***************************************************
+1. Core
+****************************************************/
+body {
+  min-height: 100vh;
+  & > div.ember-view:first-of-type, & > div.ember-view:first-child {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+  }
+  color: hsl(0, 0%, 96%);
+  background: hsl(0, 0%, 20%);
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/***************************************************
+2. Top Nav
+****************************************************/
+.top-nav-container {
+  header {
+    margin-bottom: 2rem;
+    nav.navbar {
+      background: hsl(261, 59%, 41%);
+      margin-top: 2rem;
+      border-radius: 1rem;
+      h1.navbar-brand {
+        margin: 0;
+        margin-right: 1rem;
+        a {
+          color: hsl(0, 0%, 80%);
+        }
+      }
+      .navbar-nav {
+        li, li a {
+          color: hsl(0, 0%, 96%);
+        }
+        li.active, li a.active {
+          color: hsl(0, 0%, 80%);
+        }
+      }
+    }
+  }
+}
+
+/***************************************************
+3. Sticky Footer
+****************************************************/
+.sticky-footer-container {
+  margin-top: auto;
+}
+
+/***************************************************
+4. Tech in STL
+****************************************************/
+article#tech_in_stl {
+
+}
+
+/***************************************************
+5. Tech Moving
+****************************************************/
+article#tech_moving {
+  .image-container {
+    display: flex;
+    img {
+      display: block;
+      align-self: center;
+    }
+    img#invest_midwest {
+      width: 40%;
+      max-width: 120%;
+    }
+    img#map {
+      max-width: 50%;
+      margin-left: auto;
+    }
+  }
+}
+
+/***************************************************
+6. Tech Origins
+****************************************************/
+article#tech_origins {
+  .image-container {
+    display: flex;
+    img {
+      display: block;
+      align-self: center;
+    }
+    img#iphone_x {
+      width: 20%;
+      max-width: 50%;
+      margin-left: auto;
+    }
+    img#ENIAC {
+      max-width: 60%;
+    }
+  }
+}

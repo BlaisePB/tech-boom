@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('index', { path: '/' });
+  this.route('tech-moving');
+  this.route('tech-in-stl');
+  this.route('tech-origins');
+  this.route('sources');
 });
 
 export default Router;
